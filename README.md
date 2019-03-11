@@ -12,7 +12,7 @@ It uses Python, [Flask](http://flask.pocoo.org/), [Flask-FlatPages](https://pyth
 **IMPORTANT NOTE: By default, this application is setup to store metadata about songs but not the songs themselves. Please back up your songs somewhere else**
 
 ## Getting Started
-First, create a [virtualenv] to store the libraries needed by Rainfall. Next, install the requirements using pip:
+First, install Python 3 and create a [virtualenv](https://virtualenv.pypa.io/en/latest/) to store the libraries needed by Rainfall. Next, install the requirements using pip:
 
 `$ pip install -r requirements.txt`
 
