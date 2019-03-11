@@ -26,7 +26,7 @@ This command will print out a `http://localhost:5000` URL that you can use to pr
 
 You will need a song, and something to say about the song.
 
-Put the song in static/mp3/<slug>.mp3, where `<slug>` is the URL slug you want your song to show up at. For example:
+Put the song in `static/mp3/<slug>.mp3`, where `<slug>` is the URL slug you want your song to show up at. For example:
   
 `static/mp3/somewhere-over-the-rainbow.mp3`
 
