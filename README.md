@@ -20,7 +20,7 @@ To run the app and preview what your site looks like, use the `flask run` comman
 
 `$ FLASK_DEBUG=1 FLASK_APP=sitebuilder.py flask run`
 
-This command will print out a `http://localhost:5000` URL that you can use to preview your site.
+This command will print out a `http://localhost:5000` URL that you can use to preview your site. By default your site will look a bit strange, it will be empty and have no songs in it. You can edit `templates/index.html` to change the header text and link (or anything else about the template; this is *your* site).
 
 ## Adding songs
 
