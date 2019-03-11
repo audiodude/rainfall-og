@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="single">
+<h1>
+  Songs and Sounds by <br><a href="https://travisbriggs.com">Travis Briggs</a>
+</h1>
+</header>
+
+<div class="cont">
+  <div class="single">
+    <h2 class="title">{{ song.title }}</h2>
+    {% include 'player.html' %}
+    <div class="tags">
+      {% for tag in song.meta['tags'] %}
+      <span class="tag">#{{ tag }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="description">
+    {{ song.html | safe }}
+  </div>
+</div>
+
+<div class="faq">
+  <h2>What is this site?</h2>
+  <p>
+    You're looking at a single song by <a href="https://travisbriggs.com">Travis
+    Briggs</a> posted to his song and sounds website. Press the play button to
+    listen to the song. You can browse other songs that are similar below, or
+    <a href="/">go back</a> to the main song listing.
+  </p>
+</div>
+
+<hr class="related-hr">
+
+{% for tag in song.meta['tags'] if song.related[tag]|length != 0 %}
+<div class="related">
+  <h3>Other songs tagged '{{ tag }}'</h3>
+  <ul>
+    {% for song in song.related[tag] %}
+      {% include 'song_block.html' %}
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+
+{% endblock content %}

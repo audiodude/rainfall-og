@@ -1,0 +1,226 @@
+body {
+  background-color: #eee;
+}
+
+header,
+footer {
+  background-color: #0c728c;
+  padding: 20px 10px;
+}
+
+header.single,
+footer.single {
+  background-color: #da5c28;
+}
+
+a {
+  color: #efe5bf;
+}
+
+a:visited {
+  color: #a8a186;
+}
+
+header.single a,
+.faq a {
+  color: #bbb;
+}
+
+header.single a:visited,
+.faq a:visited {
+  color: #555;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2em;
+  margin: 20px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  margin: 20px 5%;
+}
+
+.footer-text {
+  color: #fff;
+  max-width: 600px;
+  margin: 20px;
+}
+
+#cc-logo {
+  float: left;
+  margin-right: 10px;
+}
+
+.song {
+  background-color: #f0f0fb;
+  border-left: 10px solid transparent;
+  border-radius: 8px;
+  box-shadow: 2px 2px 14px 4px #ddd;
+  flex-basis: 16%;
+  margin: 20px 0.8%;
+  padding: 10px;
+  position: relative;
+}
+
+
+@media (max-width: 1600px) {
+  .song {
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .song {
+    flex-basis: 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .song {
+    flex-basis: 90%;
+  }
+}
+
+
+.song a,
+.song a:visited {
+  color: #444;
+}
+
+.song .title {
+  font-size: 1.6em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.song .date {
+  color: #444;
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.player {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.player .play-button {
+  background-color: transparent;
+  border: none;
+  color: #444;
+  font-size: 1.2em;
+  margin-left: -8px;
+}
+
+.player .transport {
+  background-color: #ccc;
+  display: inline-block;
+  height: 6px;
+  top: -6px;
+  position: relative;
+  width: 100%;
+}
+
+.player .progress {
+  background-color: #fff;
+  display: inline-block;
+  height: 6px;
+  left: 0;
+  position: absolute;
+  width: 0;
+  transition: width .25s linear;
+}
+
+.player .times {
+  display: flex;
+  font-size: .8em;
+  justify-content: space-between;
+}
+
+.cont {
+  background-color: #f0f0fb;
+  border-left: 10px solid transparent;
+  border-radius: 8px;
+  box-shadow: 2px 2px 14px 4px #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 40px;
+  max-width: 60%;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .cont {
+    max-width: 90%;
+  }
+}
+
+.cont .single {
+  width: 30%;
+}
+
+.tags {
+  margin-top: 5px;
+}
+
+.tags .tag {
+  color: #444;
+}
+
+.single .title,
+.faq h2,
+.related h3 {
+  color: #da5c28;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+}
+
+.faq h2 {
+  margin-bottom: 5px;
+}
+
+.single .title {
+  font-family: 'Oswald', sans-serif;
+}
+
+.single audio {
+  margin-top: 10px;
+}
+
+.cont .description {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  margin-top: 40px;
+  width: 60%;
+}
+
+.faq {
+  color: #444;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  max-width: 60%;
+  margin: 20px 40px;
+}
+
+.related {
+  margin: 20px 40px;
+}
+
+.related-hr {
+  color: #da5c28;
+  margin: 20px 40px;
+}

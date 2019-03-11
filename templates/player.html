@@ -1,0 +1,13 @@
+<span class="player" data-song-id="{{ song.slug }}">
+  <button class="play-button">
+    <i class="fas fa-play"></i>
+    <i class="fas fa-pause" style="display: none;"></i>
+  </button>
+  <span class="transport"><span class="progress"></span></span>
+  <audio id="player-{{ song.slug }}" preload="auto" src="{{ song.src }}">
+  </audio>
+  <div class="times">
+    <span class="current-time">0:00</span>
+    <span class="duration">0:00</span>
+  </div>
+</span>

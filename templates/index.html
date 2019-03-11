@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header>
+<h1>
+  Songs and Sounds by <br><a href="https://travisbriggs.com">Travis Briggs</a>
+</h1>
+</header>
+
+<ul>
+{% for song in songs %}
+  {% include 'song_block.html' %}
+{% endfor %}
+</ul> 
+{% endblock content %}

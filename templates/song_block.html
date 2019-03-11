@@ -1,0 +1,6 @@
+<li class="song"  style="border-left-color: {{ song.color }}">
+  <a class="title"
+     href="{{ url_for("song", path=song.path) }}">{{song.title}}</a><br>
+  <span class="date">{{ song.dt.strftime('%b %d, %Y') }}</span><br>
+  {% include 'player.html' %}
+</li>
