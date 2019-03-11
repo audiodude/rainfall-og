@@ -34,6 +34,8 @@ Now create a [Markdown](https://en.wikipedia.org/wiki/Markdown) file (this is th
 
 `songs/somewhere-over-the-rainbow.md`
 
+If you reload your localhost:5000 page, you should see your song and be able to play it. When you click the song, you will be taken to `http://localhost:5000/somewhere-over-the-rainbow` where you will see your song's detailed listen page with its description.
+
 ### Contents of the markdown file
 
 The markdown file contains what is called "front matter" at the top, which is just metadata about the song such as it's title. Underneath that is the description of the song, which can contain any markdown syntax or HTML.
