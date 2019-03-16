@@ -66,15 +66,19 @@ $(function() {
     });
   });
 
-  window.setTimeout(function() {
+  function updateDurations() {
     $('.duration').each(function(i, duration) {
       if ($(duration).text() == '0:00') {
         var player = $(duration).closest('.player');
         var song_id = $(player).attr('data-song-id');
         var audioPlayer = $('#player-' + song_id).get(0);
-
-        $(duration).text(formatTime(audioPlayer.duration));
+        
+        if (audioPlayer.duration) {
+          $(duration).text(formatTime(audioPlayer.duration));
+        }
       }
     });
-  }, 4000);
+  }
+
+  window.setTimeout(updateDurations, 4000);
 });
