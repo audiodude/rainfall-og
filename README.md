@@ -41,3 +41,29 @@ If you reload your localhost:5000 page, you should see your song and be able to 
 The markdown file contains what is called "front matter" at the top, which is just metadata about the song such as it's title. Underneath that is the description of the song, which can contain any markdown syntax or HTML.
 
 [Here](https://raw.githubusercontent.com/audiodude/songs.travisbriggs.com/master/songs/bit-bop-three-1.md) is an example of a finished markdown file. You can use it as a template for your own songs. The duration is in milliseconds. The tags are used to show related songs on the song's listen page
+
+## Building your site
+
+So far, we've been previewing our site locally using `flask run`. This works well for viewing our changes, or if we happen to have a Python server lying around, but to be honest, we probably won't be updating this site more than once a day at absolute maximum. Let's unleash the real power of Rainfall and generate a *static site*.
+
+A static site means that the mp3s, all the HTML pages, and the Javascript and CSS have all been *pre-rendered* and exist as static files. The main advantage of this is that we can then host the files extremely cheaply, and they will show up extremely fast (no Python server slowing things down).
+
+To build the site, simply run:
+
+`$ python sitebuilder.py build`
+
+This will create a `build` subdirectory that contains the final rendered website. Whenever you make changes to the site generator (the files that you checked out from git), run that command again to render a new version of your site.
+
+### Uploading the site to Netlify
+
+[Netlify](https://www.netlify.com/) is a service that hosts static content, behind a CDN, with a custom domain name and LetsEncrypt SSL certificate, for free.
+
+You can install [Netlify's CLI](https://www.netlify.com/docs/cli/) and then deploy your site using:
+
+`$ netlify deploy`
+
+The command line tool will walk you through the steps to authenticate your account and finish the deploy. From there, you can use the Netlify webapp to rename your site, attach a custom domain, and provision an HTTPS certificate.
+
+## Questions?
+
+If you have any questions, you can contact the author of this repository, Travis Briggs, at audiodude@gmail.com
