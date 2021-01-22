@@ -3,8 +3,8 @@ Flask==1.0.2
 Flask-FlatPages==0.7.0
 Frozen-Flask==0.15
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.2
 Markdown==3.0.1
 MarkupSafe==1.1.1
 PyYAML==5.1b5
-Werkzeug==0.14.1
+Werkzeug==1.0.1
