@@ -7,4 +7,4 @@ Jinja2==2.10
 Markdown==3.0.1
 MarkupSafe==1.1.1
 PyYAML==5.1b5
-Werkzeug==0.14.1
+Werkzeug==0.15.3
