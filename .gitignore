@@ -2,3 +2,4 @@ __pycache__
 static/mp3/*.mp3
 build
 .DS_Store
+venv/
